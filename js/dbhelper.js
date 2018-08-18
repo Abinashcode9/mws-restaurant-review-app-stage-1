@@ -1,4 +1,3 @@
-var isHosted = (window.location.hostname === "abinashcode9.github.io") ? 'true' : '' ;
 /**
  * Common database helper functions.
  */
@@ -182,3 +181,4 @@ class DBHelper {
   } */
 
 }
+var isHosted = (window.location.hostname === "abinashcode9.github.io") ? 'true' : '' ;
