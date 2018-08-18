@@ -1,3 +1,4 @@
+var isHosted = (window.location.hostname === "abinashcode9.github.io") ? 'true' : '' ;
 /**
  * Common database helper functions.
  */
@@ -10,7 +11,9 @@ class DBHelper {
   static get DATABASE_URL() {
     const port = 3000 // Change this to your server port
     
-      return `http://localhost:${port}/data/restaurants.json`;
+    if(isHosted)
+    	return `https://abinashcode9.github.io/mws-restaurant-review-app-stage-1/data/restaurants.json`
+    return `http://localhost:${port}/data/restaurants.json`;
   }
 
   /**
